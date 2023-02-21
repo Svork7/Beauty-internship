@@ -162,6 +162,33 @@ body {
           transform: rotate(-45deg) translate(0.4rem, -1rem);
 }
 
+.header__inner-main {
+  height: 120px;
+  border-bottom: #efefef solid 2px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 405px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.logo-text {
+  text-transform: uppercase;
+}
+
 .intro__inner {
   display: -webkit-box;
   display: -ms-flexbox;

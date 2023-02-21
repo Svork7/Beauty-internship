@@ -149,6 +149,27 @@ body {
   }
 }
 
+.header__inner-main {
+  height: 120px;
+  border-bottom: $gray solid 2px;
+  background-color: $white;
+  display: flex;
+}
+
+.logo__container {
+  display: flex;
+  margin-left: 405px;
+  align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.logo-text {
+  text-transform: uppercase;
+}
+
 .intro__inner {
   display: flex;
   align-items: center;
