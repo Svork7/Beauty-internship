@@ -152,6 +152,9 @@ body {
 .header__inner-main {
   background-color: $white;
   border-bottom: $gray solid 1px;
+  @media (max-width: 1100px) {
+    padding: 0 100px;
+  }
 }
 
 .header__inner-content {
@@ -261,9 +264,9 @@ body {
   }
 }
 
-.sale__container {
+/*.sale__container {
   background-image: url('../src/svg/top-bg.svg');
-  width: 100%;
+  width: 1920px;
   height: 604px;
 }
 
@@ -271,154 +274,204 @@ body {
   max-width: 1110px;
   display: flex;
   flex-direction: column;
+}*/
+
+.sale {
+  background-image: url('../src/svg/top-bg.svg');
+  background-size: cover;
+
+  max-width: 1920px;
 }
 
-.aboutme__text {
-  margin: 15px 30px;
-  text-align: justify;
-}
-
-.aboutme-link {
-  color: #000;
-  transition: 0.3s;
-  text-decoration: none;
-  font-weight: 700;
-  &:hover {
-    text-decoration: underline;
-    color: crimson;
-  }
-}
-
-.skills__items {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.skills__item {
-  text-align: center;
+.sale__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 2rem;
-  @media screen and (max-width: 770px) {
-    margin: 0.75rem;
-    width: 100px;
+  justify-content: space-around;
+  padding: 192px 405px 193px;
+  @media (max-width: 1100px) {
+    padding: 0 100px 100px;
   }
-  @media print {
-    margin-left: 1.8rem;
-    margin-right: 1.8rem;
-    width: 60px;
+  &-title {
+    display: block;
+    color: $white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  &-text {
+    display: block;
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  &-button {
+    color: $white;
+    display: block;
+    background-color: $green;
+    border: 2px solid $white;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 12px 27px;
+    width: 170px;
+    font-weight: 400;
   }
 }
 
-.skills__item-image {
-  max-width: 100px;
-  @media screen and (max-width: 770px) {
-    max-width: 60px;
+.special-offers {
+  padding: 0 calc(50% - 555px);
+  margin-top: 90px;
+
+  .special-offers__header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 38px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-card {
+    height: 313px;
+    width: 255px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+
+    .item-card-img {
+      width: 125px;
+      height: 166px;
+    }
+  }
+
+  &__description {
+    color: $dark;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 30px;
     text-align: center;
-    margin: 0 auto;
   }
-  @media print {
-    width: 60px;
+
+  &__price {
+    font-size: 21px;
+    font-weight: 500;
   }
-}
-.education__items {
-  padding: 10px;
-  //justify-content: space-between;
-}
 
-.education__item {
-}
-
-.edu__link {
-  color: #000;
-  transition: 0.3s;
-  text-decoration: none;
-  font-weight: 700;
-  &:hover {
-    text-decoration: underline;
-    color: crimson;
+  &__button {
+    background-color: $green;
+    color: $white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px 9px;
   }
 }
-//margin: 1rem;
 
-.education__h3 {
-  margin: 10px 10px 0 0;
-  text-align: justify;
-}
-
-.education__h4 {
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-.projects__inner {
-  @media print {
-    display: none;
-  }
-}
-.projects__container {
+.advert {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 calc(50% - 555px);
+  margin: 100px 0;
+
+  &__card {
+    width: 460px;
+    padding: 35px 40px;
+    background-color: $green;
+    display: flex;
+    justify-content: space-between;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 260px;
+
+      &__title {
+        display: block;
+        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+
+      &__text {
+        display: block;
+        color: $white;
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+
+      .input {
+        display: block;
+        padding: 10px 25px 9px;
+        border: none;
+        border-radius: 30px;
+        width: 175px;
+      }
+
+      .map__btn {
+        color: $white;
+        display: block;
+        border-radius: 30px;
+        background: $green;
+        font-size: 14px;
+        width: 170px;
+        padding: 10px 27px 9px;
+        border: 2px solid $white;
+      }
+    }
+
+    &__image {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      width: 140px;
+      height: 107px;
+      margin: auto 0;
+    }
+  }
 }
 
-.project__item {
+.contacts {
+  background-color: #ffffff;
   display: flex;
-  flex-direction: column;
-  justify-content: last baseline;
+  justify-content: space-between;
+  padding: 38px calc(50% - 555px);
   align-items: center;
-  width: 200px;
-  //height: 300px;
-  margin: 1rem;
 
-  .tictactoe {
-    //margin: 0 0 0 2rem;
+  &__links {
+    display: flex;
+
+    .footer__icon {
+      display: flex;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid $green;
+      background: $white;
+      & + .footer__icon {
+        margin-left: 20px;
+      }
+    }
   }
 }
 
-.project__link {
-  color: #000;
-  transition: 0.3s;
-  text-decoration: none;
-  font-weight: 700;
-  &:hover {
-    text-decoration: none;
-    color: crimson;
-    scale: 110%;
-  }
-}
-
-.project__item-title {
-  margin: 0.5rem auto;
-  text-align: center;
-}
-
-.footer__link {
-  color: #000;
-  transition: 0.3s;
-  text-decoration: none;
-  font-weight: 700;
-  text-align: right;
-  margin-right: 20px;
-
-  &:hover {
-    text-decoration: none;
-    color: crimson;
-    scale: 120%;
-  }
-}
-
-.footer__nav {
-  text-align: right;
-  margin-right: 20px;
-}
-
-.footer {
-  padding: 1.2rem 0;
-  // background: linear-gradient(180deg, $light-gray 0%, $light-blue 100%);
-  @media print {
-    display: none;
+.policy {
+  margin: 20px 0;
+  padding: 0 calc(50% - 555px);
+  display: flex;
+  justify-content: space-between;
+  .policy-text {
+    color: #828282;
+    font-size: 12px;
   }
 }
