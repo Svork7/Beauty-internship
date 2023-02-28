@@ -1,5 +1,5 @@
 $('.menu__btn').on('click', function () {
-  $('.menu__list').toggleClass('menu__list--active')
+  $('.top__menu-list').toggleClass('.top__menu-list--active')
 })
 
 $('.menu__btn').addClass('unToggled')
