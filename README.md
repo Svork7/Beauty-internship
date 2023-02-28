@@ -1,3 +1,3 @@
-# mycv
-my CV site
-HTML, CSS, JS + jQuery
+for hotels.ru
+responsible beauty shop landing.
+SCSS used
